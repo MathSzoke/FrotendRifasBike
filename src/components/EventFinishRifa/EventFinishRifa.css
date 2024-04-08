@@ -1,0 +1,49 @@
+.event-finish-rifa
+{
+    width: 100%;
+    height: 20%;
+    background-color: var(--bs-gray-500);
+    position: absolute;
+    z-index: 100000;
+    transition: transform 1s ease;
+}
+
+.visible
+{
+    transform: translateY(0%);
+}
+
+.hidden
+{
+    transform: translateY(-100%);
+}
+
+.btnOpenEventComponent
+{
+    border-radius: 0 0 10px 10px;
+    height: 2em;
+    padding: 0 10px 10px !important;
+    width: 5em;
+    color: var(--bs-white);
+}
+.btnOpenEventComponent:hover
+{
+    color: var(--bs-white);
+}
+
+.timerEvent
+{
+    font-size: clamp(50px, 10vw, 100px);
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--bs-white);
+}
+
+@media(max-width: 350px)
+{
+    .div-event-btn
+    {
+        margin-right: 5em !important;
+    }
+}

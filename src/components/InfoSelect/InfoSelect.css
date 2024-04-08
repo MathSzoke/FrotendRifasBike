@@ -1,0 +1,50 @@
+section.infoselect
+{
+    margin-bottom: 0;
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+}
+
+.contentInputs
+{
+    justify-content: space-around;
+}
+
+.PhoneInputInput
+{
+    flex: none !important;
+}
+
+@media(max-width:767px)
+{
+    .container
+    {
+        flex-direction: column;
+    }
+
+    section.infoselect
+    {
+        margin: 5rem 0 0 0;
+    }
+
+    div.inputs, div.selectButton
+    {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 1200px)
+{
+    .contentInputs
+    {
+        flex-wrap: wrap;
+    }
+    
+    .inputs
+    {
+        margin: 1em;
+    }
+}

@@ -1,0 +1,85 @@
+.successfullyPixPaid
+{
+    z-index: 10000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--bs-white);
+    top: 0;
+    left: 0;
+}
+
+.circle
+{
+    width: 20vw;
+    height: 20vw;
+    background: #32CD32;
+    border-radius: 50%;
+    position: relative;
+    animation: circleScale 0.5s ease-in-out forwards;
+}
+
+.checkmark
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    animation: checkmarkAppear 0.5s 0.5s ease-in-out forwards;
+
+    font-size: 10vw;
+    font-family: "Arial Black", sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+
+.contentPaid
+{
+    font-weight: 700;
+    font-size: xx-large;
+    color: var(--bs-light-text-emphasis);
+    margin-top: 1em;
+}
+
+.descriptionPaid
+{
+    font-weight: 100;
+    font-size: large;
+    color: var(--bs-light-text-emphasis);
+    margin-top: 1em;
+}
+
+.closeSection
+{
+    margin: 2em;
+    position: absolute;
+    right: 0;
+    font-size: 2em;
+}
+
+@keyframes circleScale
+{
+    0%
+    {
+        transform: scale(0);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+
+@keyframes checkmarkAppear
+{
+    0%
+    {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}

@@ -1,13 +1,130 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+input
+{
+  width: 80%;
+  padding: 1em;
+  border: 1px solid #d7d7d7;
+  border-radius: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul
+{
+  list-style: none;
+}
+
+li
+{
+  list-style: none;
+}
+
+a
+{ 
+  color: inherit;
+  text-decoration: none;
+} 
+
+p
+{
+  margin: 0;
+}
+
+h1
+{
+  font-size: 3em;
+}
+
+.error
+{
+  color: red;
+  margin: 2em;
+}
+
+.required
+{
+  color: red;
+}
+
+.section
+{
+  margin: 5em;
+}
+
+.unselect
+{
+  user-select: none;
+}
+
+::-webkit-scrollbar 
+{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track 
+{
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb 
+{
+    background: #504e70;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+    background: #29283a;
+}
+
+
+.upSiteTop 
+{
+  display: block;
+  position: fixed;
+  bottom: 5vw;
+  left: 5vw;
+  z-index: 10000;
+}
+
+.btnUp 
+{
+  border: none;
+  background: none;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  color: var(--bs-dark-text-emphasis);
+
+  transition: all 2s;
+}
+.btnUp:hover 
+{
+  transform: scale(1.05);
+}
+
+.downSiteTop 
+{
+  display: block;
+  position: fixed;
+  bottom: 5vw;
+  right: 5vw;
+  transform: rotate(180deg);
+}
+
+.btnDown 
+{
+  border: none;
+  background: none;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  color: var(--bs-dark-text-emphasis);
+  transition: all 2s;
+}
+
+.btnDown:hover 
+{
+  transform: scale(1.05);
+  color: rgba(0, 0, 0, 0.7) !important;
 }

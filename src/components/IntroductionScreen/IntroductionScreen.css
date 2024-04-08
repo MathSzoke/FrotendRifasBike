@@ -1,0 +1,116 @@
+.introductionScreen
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.content
+{
+    text-align: center;
+    color: white;
+}
+  
+.arrowButtons
+{
+    margin-top: 20px;
+    display: flex;
+}
+  
+.arrowButton
+{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.arrowButton:hover
+{
+    background-color: rgb(117, 117, 117);
+}
+
+.svgArrowPointer
+{
+    width: 40%;
+    height: 40%;
+}
+
+.svgArrowPointer-5
+{
+    width: 20%;
+    height: 20%;
+}
+
+.jumpIntro
+{
+    top: 85%;
+    position: absolute;
+}
+
+.content-description-intro
+{
+    background: #0000009e;
+    padding: 2em;
+    border-radius: 50px;
+    
+    max-width: 90%;
+    max-height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+@media(max-width: 1045px)
+{
+    .svgArrowPointer-5
+    {
+        rotate: 315deg;
+        width: 5%;
+        height: 10%;
+        margin: 10px;
+    }
+}
+
+@media(max-width: 558px)
+{
+    .svgArrowPointer-5
+    {
+        width: 10%;
+        height: 10%;
+        margin: 10px;
+    }
+}
+
+@media(max-height: 1050px)
+{
+    .content-description-intro
+    {
+        max-height: 50%;
+    }
+}
+
+@media(max-height: 670px)
+{
+    .p-content-arrow
+    {
+        font-size: large !important;
+    }
+}
+
+@media(max-height: 500px)
+{
+    .p-content-arrow
+    {
+        font-size: small !important;
+    }
+}

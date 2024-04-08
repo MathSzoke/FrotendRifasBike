@@ -1,0 +1,25 @@
+.info-btn
+{
+    transition: all 0.5s ease;
+}
+
+.info-btn:hover
+{
+    background-color: var(--bs-border-color-translucent);
+    transform: scale(1.3);
+}
+
+#btnInfo
+{
+    color: var(--bs-black);
+    background: none !important;
+    border: none !important;
+}
+
+@media (max-width: 600px)
+{
+    .modal-dialog
+    {
+        top: 50vw;
+    }
+}

@@ -1,0 +1,129 @@
+#wrapper
+{
+    padding-left: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#sidebar-wrapper
+{
+    z-index: 1000;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+ 
+.sidebar-nav >.sidebar-brand
+{
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+ 
+.sidebar-nav >.sidebar-brand a
+{
+    color: #999999;
+}
+ 
+.sidebar-nav >.sidebar-brand a:hover
+{
+    color: #fff;
+    background: none;
+}
+ 
+.no-margin
+{
+    margin: 0;
+}
+ 
+@media (min-width: 768px)
+{
+    #wrapper
+    {
+       padding-left: 250px;
+    }
+ 
+    #wrapper.toggled
+    {
+        padding-left: 0;
+    }
+ 
+    #page-content-wrapper
+    {
+       padding: 20px;
+       position: relative;
+       -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+       transition: all 0.5s ease;
+    }
+ 
+    #wrapper.toggled #page-content-wrapper
+    {
+       position: relative;
+       margin-right: 0;
+       padding-left: 250px;
+    }
+ 
+    #wrapper.toggled-2 #page-content-wrapper
+    {
+       position: relative;
+       margin-right: 0;
+       margin-left: -200px;
+       -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+       transition: all 0.5s ease;
+       width: auto;
+    }
+}
+
+.contentNumbersSelected
+{
+    overflow: auto;
+    margin-left: 1rem;
+}
+ 
+@media (max-width: 1200px)
+{
+    .contentNumbersSelected
+    {
+        bottom: 0;
+    }
+    .listNumbers
+    {
+        grid-template-columns: 2fr !important;
+    }
+    .configs
+    {
+        max-width: max-content;
+    }
+}
+ 
+@media (max-width: 1650px)
+{
+    .contentNumbersSelected
+    {
+        left: 1vw;
+        position: fixed;
+    }
+
+    .listNumbers
+    {
+        grid-template-columns: 2fr 2fr;
+    }
+}
+ 
+.infoRifa
+{
+    top: 1vw;
+    left: 1vw;
+}

@@ -1,0 +1,9 @@
+.modal-closed
+{
+    z-index: -1 !important;
+}
+
+.fade:not(.show)
+{
+    z-index: -1 !important;
+}

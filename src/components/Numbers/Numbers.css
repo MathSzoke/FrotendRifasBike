@@ -1,0 +1,78 @@
+.card
+{
+    padding: 1em;
+    margin: 1em;
+    width: 80px;
+    align-items: center;
+}
+
+.contentNumbers
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.selectNumber:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s;
+    background-color: var(--bs-card-border-color);
+    color: white;
+}
+
+.selected
+{
+    background-color: var(--bs-card-border-color) !important;
+}
+
+.filterNumbers
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+}
+
+.configs
+{
+    justify-content: space-around;
+}
+
+section.numbers
+{
+    display: grid;
+    justify-items: center;
+    margin-top: 2em;
+}
+
+.listNumbers
+{
+    grid-template-columns: 2fr 2fr 2fr;
+    display: grid;
+}
+
+.selectNumber.disabled
+{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+@media(max-width:767px)
+{
+    section.numbers
+    {
+        margin: 5rem 0 0 0;
+    }
+
+    div.filterNumbers
+    {
+        width: 100%;
+    }
+
+    .card
+    {
+        width: 50px;
+    }
+}
