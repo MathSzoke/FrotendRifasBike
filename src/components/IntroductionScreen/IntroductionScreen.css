@@ -48,8 +48,10 @@
 
 .svgArrowPointer-5
 {
-    width: 20%;
-    height: 20%;
+    height: 10%;
+    width: 10%;
+    rotate: 315deg;
+    margin: 2em;
 }
 
 .jumpIntro
