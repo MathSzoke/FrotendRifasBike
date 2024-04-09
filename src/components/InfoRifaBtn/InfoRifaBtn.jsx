@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import './InfoRifaBtn.css'
-import bikeImage from '../../assets/bike.jpg';
+import bikeImage from '../../assets/bike.png';
 import { Tooltip } from 'react-tooltip';
 
 export function InfoRifaBtn()

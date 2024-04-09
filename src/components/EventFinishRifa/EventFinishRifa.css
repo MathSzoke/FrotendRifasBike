@@ -24,11 +24,6 @@
     height: 2em;
     padding: 0 10px 10px !important;
     width: 5em;
-    color: var(--bs-white);
-}
-.btnOpenEventComponent:hover
-{
-    color: var(--bs-white);
 }
 
 .timerEvent

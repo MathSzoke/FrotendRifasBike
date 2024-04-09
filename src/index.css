@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+:root, [data-bs-theme=light]
+{
+  --bs-black: var(--bs-white) !important;
+  --bs-white: var(--bs-black) !important;
+}
+
+:root, [data-bs-theme=dark]
+{
+  --bs-black: var(--bs-black) !important;
+  --bs-white: var(--bs-white) !important;
+}
+
 input
 {
   width: 80%;
@@ -95,12 +107,11 @@ h1
   height: 5em;
   border-radius: 50%;
   color: var(--bs-dark-text-emphasis);
-
-  transition: all 2s;
+  transition: all 0.5s;
 }
 .btnUp:hover 
 {
-  transform: scale(1.05);
+  transform: scale(1.30);
 }
 
 .downSiteTop 
@@ -120,11 +131,10 @@ h1
   height: 5em;
   border-radius: 50%;
   color: var(--bs-dark-text-emphasis);
-  transition: all 2s;
+  transition: all 0.5s;
 }
 
 .btnDown:hover 
 {
-  transform: scale(1.05);
-  color: rgba(0, 0, 0, 0.7) !important;
+  transform: scale(1.30);
 }

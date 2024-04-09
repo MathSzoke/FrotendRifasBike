@@ -16,7 +16,7 @@ export function EventFinishRifa()
 
   const calculateTimeRemaining = () =>
   {
-      const eventDate = new Date("2024-04-19T20:00:00");
+      const eventDate = new Date("2024-05-01T20:00:00");
       const now = new Date();
 
       const difference = eventDate - now;
